@@ -18,13 +18,12 @@ build:
 
 requirements:
   host:
-    - python >= 3.5
+    - python >= 3.8
     - pip
     - setuptools
-    - r-base >= 3.4
 
   run:
-    - python
+    - python >= 3.8
     - six
     - pandas >= 0.24
     - numpy >= 1.10.0
