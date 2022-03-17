@@ -1,5 +1,5 @@
 {% set name = "nextalign" %}
-{% set version = "1.10.1" %}
+{% set version = "1.11.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,11 +7,11 @@ package:
 
 source:
   - url: https://github.com/nextstrain/nextclade/releases/download/{{ version }}/{{ name }}-Linux-x86_64 # [linux64]
-    sha256: ba11e529d0f928c36a699510f2e8cd2d1aa1546cb81e48966434744a76a1becb                             # [linux64]
+    sha256: b7aac53d7a2d454791723311457e12f15760364d35908a0269d0badb13f440a9                             # [linux64]
   - url: https://github.com/nextstrain/nextclade/releases/download/{{ version }}/{{ name }}-MacOS-x86_64 # [osx and x86_64]
-    sha256: 5e1d590c28f10ed293c1dc56027075cb9b2ae895384455a4065ee1f601bf20c5                             # [osx and x86_64]
+    sha256: aeb42ad4045765447ac4b9d0489722c218a242cb989a0c2c84360663913c0c18                             # [arm64]
   - url: https://github.com/nextstrain/nextclade/releases/download/{{ version }}/{{ name }}-MacOS-arm64  # [arm64]
-    sha256: 11d6127cf25027dd6335cf8d96bfc7aa168bc86f28a282dcf2daad330d8d35e7                             # [arm64]
+    sha256: aeb42ad4045765447ac4b9d0489722c218a242cb989a0c2c84360663913c0c18                             # [arm64]
 
 build:
   number: 0
